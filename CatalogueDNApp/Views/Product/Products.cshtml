@@ -1,0 +1,44 @@
+@model IEnumerable<CatalogueDNApp.Models.Product>
+@{
+ViewData["title"]= "Liste des produits";
+}
+
+<div class="container spacer">
+<form method="post" action="/Product/search">
+<div class="form-group">
+<label>Mot Clé:</label>
+<input type="text" name="kw" value="@Html.ViewBag.kw"/>
+<button type="submit">Chercher</button>
+@Html.ValidationMessage("kw", new { @class="text-danger"})
+</div>
+</form>
+</div>
+<table class="table table-striped" >
+<thead>
+<tr>
+<th>@Html.DisplayNameFor(model=>model.ProductID)</th>
+<th>@Html.DisplayNameFor(model => model.Name)</th>
+<th>@Html.DisplayNameFor(model => model.Price)</th>
+<th>@Html.DisplayNameFor(model => model.Category)</th>
+</tr>
+</thead>
+<tbody>
+@foreach (var p in Model)
+{
+<tr>
+<td>@Html.DisplayFor(modelItem=>p.ProductID)</td>
+<td>@Html.DisplayFor(modelItem => p.Name)</td>
+<td>@Html.DisplayFor(modelItem => p.Price)</td>
+<td>@Html.DisplayFor(modelItem => p.Category.Name)</td>
+<td><a asp-action="Edit" asp-route-id="@p.ProductID">Edit</a></td>
+<td>
+<a asp-action="Delete" asp-route-id="@p.ProductID"
+onclick="return confirm('êtes vous sûre de vouloir supprimer?');">Delete</a>
+</td>
+</tr>
+}
+</tbody>
+</table>
+<div class="container spacer">
+<a asp-controller="Product" asp-action="FormProduct">Nouveau Produit</a>
+</div>

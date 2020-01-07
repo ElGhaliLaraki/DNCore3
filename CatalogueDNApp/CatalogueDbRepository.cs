@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using CatalogueDNApp.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,7 +12,5 @@ namespace CatalogueDNApp
         public CatalogueDbRepository(DbContextOptions options):base(options){
 
         }
-
-
     }
 }

@@ -13,7 +13,7 @@ namespace CatalogueDNApp.Controllers{
         public ProductRestController(CatalogueDbRepository repository){
             this.catalogueRepository=repository;
         }
-
+        
         [HttpGet]
         public IEnumerable <Product> findAll(){
             return catalogueRepository.Products.Include(p=>p.Category);

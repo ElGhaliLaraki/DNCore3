@@ -38,3 +38,6 @@ C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\
 C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Products.cshtml.g.cs
+C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Edit.cshtml.g.cs
+C:\Users\ghalilaraki\Desktop\El Ghali Laraki\Mes Projets\DNCore3\CatalogueDNApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\FormProduct.cshtml.g.cs

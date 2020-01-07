@@ -1,0 +1,30 @@
+@model CatalogueDNApp.Models.Product
+@{
+ViewData["title"]= "Nouveau produit";
+}
+
+<div class="container spacer">
+    <h2>New Product</h2>
+    <form method="POST" asp-action ="Save">
+        <div class="form group" >
+            @Html.LabelFor(model => model.Name, new {@class="control-label"})
+            @Html.TextBoxFor(model => model.Name, new {@class="form-control"})
+            @Html.ValidationMessageFor( model => model.Name,"", new { @class = "text-danger"})
+        </div>
+        <div class="form group" >
+            @Html.LabelFor(model => model.Price, new {@class="control-label"})
+            @Html.TextBoxFor(model => model.Price, new {@class="form-control"})
+            @Html.ValidationMessageFor( model => model.Price,"", new { @class = "text-danger"})
+        </div>
+        <div class="form group" >
+            @Html.LabelFor(model => model.Category, new {@class="control-label"})
+            @Html.TextBoxFor(model => model.Category.Name, new {@class="form-control"})
+            @Html.ValidationMessageFor( model => model.Category.Name,"", new { @class = "text-danger"})
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+             
+    </form>
+</div>
+
